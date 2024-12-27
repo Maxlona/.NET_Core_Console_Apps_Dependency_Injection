@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "injection": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Dev": "",
+        "QA": "",
+        "UAT": ""
+      }
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}
