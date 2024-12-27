@@ -9,12 +9,13 @@ using Microsoft.Extensions.DependencyInjection;
 IServiceCollection services = ConfigureServices();
 ServiceProvider serviceProvider = services.BuildServiceProvider();
 
+
 //// create a custom dependency
 static IServiceCollection ConfigureServices()
 {
-    string? env = Environment.GetEnvironmentVariable("Hosting:Environment");
+    string? env = Environment.GetEnvironmentVariable("Hosting:Environment")  ?? "dev";
     IServiceCollection services = new ServiceCollection();
-    IConfiguration config = AddConfigs(env?? "dev");
+    IConfiguration config = AddConfigs(env);
     services.AddSingleton(config);
     services.AddNewCar();
     services.AddCustomLogging();

@@ -3,7 +3,6 @@
     /// model should match config.json
     public class Features
     {
-        public string Env { get; set; } 
         public External? External { get; set; }
     }
 
