@@ -1,4 +1,4 @@
-# .NET Core Console Apps with Dependency Injection
+# Configure IServiceCollection for .NET Core Console Apps using Microsoft.Extensions.*
 
 This repository demonstrates how to implement **Dependency Injection (DI)** in a **.NET Core Console Application** using `IServiceCollection` and `Microsoft.Extensions.*` libraries. The goal is to create a maintainable and testable architecture in console applications by utilizing DI and middleware-like patterns.
 
